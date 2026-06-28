@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(./**)",
+      "Bash(graphify --help)",
+      "Bash(graphify --version)",
+      "Bash(graphify version *)",
+      "Bash(graphify run *)",
+      "Bash(graphify query *)",
+      "Bash(graphify path *)",
+      "Bash(graphify install *)",
+      "Bash(graphify export *)",
+      "Bash(pip3 install graphifyy *)",
+      "Bash(python3 -m graphify *)",
+      "Bash(git -C . log --oneline -*)",
+      "Bash(git -C . status)",
+      "Bash(git -C . diff)",
+      "Bash(git -C . show *)",
+      "Bash(git -C . branch *)",
+      "WebFetch(domain:arm-software.github.io)",
+      "WebFetch(domain:developer.arm.com)",
+      "WebFetch(domain:www.keil.com)",
+      "WebFetch(domain:www.st.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(chmod +x /Users/akeles/stm32skill/bin/refresh-st-repo-cache.sh)",
+      "Bash(git -C /Users/akeles/stm32skill status --short)",
+      "Bash(git -C /Users/akeles/stm32skill add -A)",
+      "Bash(git -C /Users/akeles/stm32skill commit -m ' *)",
+      "Bash(curl -sL 'https://documentation-service.arm.com/documentation/ka001193/1-0/')",
+      "Bash(curl -sL 'https://www.google.com/search?q=ka001193+arm+site:developer.arm.com')",
+      "Bash(git -C /Users/akeles/stm32skill rm -r --cached .claude-cache)",
+      "Bash(git -C /Users/akeles/stm32skill add .gitignore)",
+      "Bash(git -C /Users/akeles/stm32skill commit -m \"fix: ignore .claude-cache/ \\(downloaded ST source for benchmarks should not be committed — per-analysis, license, bloat\\)\")",
+      "Bash(git -C /Users/akeles/stm32skill log --oneline -8)",
+      "Bash(git -C /Users/akeles/stm32skill commit -m 'feat\\(wave4\\): enrich ref-bootloader.md with web research + add critical H7 errata *)"
+    ]
+  }
+}
