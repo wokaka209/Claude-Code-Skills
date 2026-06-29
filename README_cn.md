@@ -64,7 +64,7 @@ cp -r Claude-Code-Skills/deep-research ~/.claude/skills/
 |------|--------|
 | [python-teacher](python-teacher/) | 费曼学习法教 Python + 艾宾浩斯复习 — 你得讲给我听才算学会了 |
 | [git-teacher](git-teacher/) | 同样的方法教 Git — 教是最好的学 |
-| [investment-teacher](investment-teacher/) | 费曼学习法教投资理财 — 复利、预算、投资入门，适合零资金新手 |
+| [investment-teacher](investment-teacher/) | 费曼学习法教投资理财 — 复利、预算、投资入门，整合《小狗钱钱》故事框架，适合零资金新手 |
 | [koucai-teacher](koucai-teacher/) | 口才和表达训练，带间隔复习 |
 | [baoyan-tutoring](baoyan-tutoring/) | 保研相关指导 |
 

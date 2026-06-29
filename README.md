@@ -64,7 +64,7 @@ You can also grab just one skill — no need to clone the whole thing. Just make
 |-------|-------------|
 | [python-teacher](python-teacher/) | Teaches Python using Feynman method + spaced repetition — you explain it back to prove you get it |
 | [git-teacher](git-teacher/) | Same approach but for Git — learn by teaching |
-| [investment-teacher](investment-teacher/) | Financial literacy teaching using Feynman method — compound interest, budgeting, investing basics |
+| [investment-teacher](investment-teacher/) | Financial literacy teaching using Feynman method — compound interest, budgeting, investing basics, integrated with 小狗钱钱 (Money) book framework |
 | [koucai-teacher](koucai-teacher/) | Public speaking and communication training with spaced review |
 | [baoyan-tutoring](baoyan-tutoring/) | Grad school prep guidance |
 
