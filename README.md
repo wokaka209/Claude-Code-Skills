@@ -3,14 +3,14 @@
 # Claude Code Skills
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-Skills-D97757?style=flat-square&logo=anthropic&logoColor=fff)
-![Skills](https://img.shields.io/badge/Skills-31-blue?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-32-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 A bunch of skills I've built for Claude Code. They handle stuff like research, writing, coding help, language learning, browser automation, and more. Drop them into your skills folder and they just work.
 
 ## What's in here
 
-- **31 skills** covering coding, research, writing, teaching, and daily workflows
+- **32 skills** covering coding, research, writing, teaching, and daily workflows
 - Each skill is a standalone folder with a `SKILL.md` — that's all Claude Code needs
 - Mix of my own stuff and things I've tweaked from the community
 
@@ -64,6 +64,7 @@ You can also grab just one skill — no need to clone the whole thing. Just make
 |-------|-------------|
 | [python-teacher](python-teacher/) | Teaches Python using Feynman method + spaced repetition — you explain it back to prove you get it |
 | [git-teacher](git-teacher/) | Same approach but for Git — learn by teaching |
+| [investment-teacher](investment-teacher/) | Financial literacy teaching using Feynman method — compound interest, budgeting, investing basics |
 | [koucai-teacher](koucai-teacher/) | Public speaking and communication training with spaced review |
 | [baoyan-tutoring](baoyan-tutoring/) | Grad school prep guidance |
 
