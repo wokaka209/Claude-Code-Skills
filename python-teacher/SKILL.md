@@ -82,7 +82,8 @@ output = os.path.dirname(os.path.abspath(__file__))
 | 02_python_core | ✅ 完成 | 推导式、OOP、装饰器、文件IO、异常 (011-023) |
 | 03_numpy | ✅ 完成 | 数组操作、广播、随机数 (024-028) |
 | 04_pandas | ✅ 完成 | DataFrame、CSV、缺失值 (029-031) |
-| 05_matplotlib | 🔄 进行中 | 折线图、散点图、子图、可视化 (032+) |
+| 05_matplotlib | ✅ 完成 | 折线图、散点图、子图、可视化 (032-036) |
+| 06_pytorch | 🔄 进行中 | 张量、MLP、CNN、Dataset/DataLoader (037-041) |
 
 ## 教学风格
 
