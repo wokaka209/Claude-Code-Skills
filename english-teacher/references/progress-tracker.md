@@ -16,9 +16,8 @@
 |------|------|------|
 | 01_readme_reading | ⏳ 待开始 | GitHub README 结构、常见句型、长难句拆解 |
 | 02_tech_vocabulary | ⏳ 待开始 | 开发者高频词汇、一词多义、缩写 |
-| 03_speaking_basics | ⏳ 待开始 | 技术口语 + 日常口语 |
-| 04_tech_writing | ⏳ 待开始 | commit message、PR description、issue 模板 |
-| 05_reading_practice | ⏳ 待开始 | PyTorch/NumPy/Pandas 文档精读 |
+| 03_tech_writing | ⏳ 待开始 | commit message、PR description、issue 模板 |
+| 04_reading_practice | ⏳ 待开始 | PyTorch/NumPy/Pandas 文档精读 |
 
 ---
 
@@ -41,12 +40,6 @@
 | (示例) repository | 代码仓库 | 2026-07-06 | "Push your code to the repository." |
 
 ---
-
-## 口语练习记录
-
-| 场景 | 练习日期 | 得分 | 备注 |
-|------|---------|------|------|
-| (示例) 自我介绍 | 2026-07-06 | - | - |
 
 ---
 
