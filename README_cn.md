@@ -3,14 +3,14 @@
 # Claude Code Skills
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-Skills-D97757?style=flat-square&logo=anthropic&logoColor=fff)
-![Skills](https://img.shields.io/badge/Skills-32-blue?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-33-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 给 Claude Code 写的一堆技能。搞研究、写东西、写代码、学语言、浏览器自动化什么的都有。扔到技能目录里就能用。
 
 ## 有什么
 
-- **32 个技能**，覆盖编码、研究、写作、教学、日常工具
+- **33 个技能**，覆盖编码、研究、写作、教学、日常工具
 - 每个技能就是一个文件夹，里面放个 `SKILL.md` 就行，Claude Code 就能认出来
 - 有些是自己写的，有些是从社区拿过来改过的
 
@@ -66,6 +66,7 @@ cp -r Claude-Code-Skills/deep-research ~/.claude/skills/
 | [git-teacher](git-teacher/) | 同样的方法教 Git — 教是最好的学 |
 | [investment-teacher](investment-teacher/) | 费曼学习法教投资理财 — 复利、预算、投资入门，整合《小狗钱钱》故事框架，适合零资金新手 |
 | [koucai-teacher](koucai-teacher/) | 口才和表达训练，带间隔复习 |
+| [english-teacher](english-teacher/) | 开发者技术英语 — GitHub README 精读、技术词汇、口语练习、技术写作 |
 | [baoyan-tutoring](baoyan-tutoring/) | 保研相关指导 |
 
 ### 效率 & 工具
