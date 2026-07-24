@@ -1,0 +1,47 @@
+{
+  "skill_name": "drawio-skill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a new editable .drawio AWS architecture diagram for a web application that uses Route 53, CloudFront, an ALB, ECS on Fargate, RDS, and CloudWatch. Use official AWS icons, group resources by AWS Cloud and VPC, and export a PNG preview after creating the diagram.",
+      "expected_output": "A new .drawio file in readable inline XML form, using AWS icons and clear layered grouping, plus a PNG export for visual verification.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Inspect an existing compressed multi-page .drawio file, normalize it into editable inline XML, adjust one specific page to fix overlapping connectors and container padding, and report exactly which pages were modified.",
+      "expected_output": "The workflow should include summary inspection, normalization, a targeted edit instead of whole-file rewrite, and a clear final report of affected pages and validation steps.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Given a vague request to show an approval process involving applicant, reviewer, and finance, choose the right draw.io diagram type, explain the choice briefly, create the diagram as .drawio, and keep the layout consistent with official workflow examples.",
+      "expected_output": "The result should pick a process-oriented diagram family such as workflow, BPMN, or activity diagram, create a structured .drawio file, and follow the official-example-based layout conventions.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Repair an existing architecture diagram whose biggest issues are edge crossings, lines passing through node bodies, and labels being covered. Normalize the file if needed, reroute connectors through clear channels, run lint, and do not leave unresolved edge_crossing or edge_through_node issues unless you explicitly justify them.",
+      "expected_output": "The run should treat connector quality as the primary task, use lint as a gate, and clearly report what was fixed versus what remains.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Create a new multi-page draw.io diagram set for the same system: one AWS architecture overview and one service interaction flow. Keep the two pages visually related, but avoid default AI-looking homogenous styling by intentionally choosing a visual system and applying it consistently.",
+      "expected_output": "The result should show deliberate style choices, consistent cross-page design language, and no lazy reuse of a generic default rounded-box style.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Update the draw.io export workflow so it behaves correctly on macOS, Windows, and Linux. The solution should detect the current platform, choose a sensible default draw.io binary path for that platform, and explain when DRAWIO_BIN must be set manually.",
+      "expected_output": "The result should distinguish macOS, Windows, and Linux instead of assuming one path model, and the documentation plus script behavior should stay aligned.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Create or revise a draw.io diagram so it keeps the polished look of a presentation-quality diagram: transparent background, explicit defaultFontFamily, readable text sizing, generous container padding, and edge labels that are offset away from the connector. At the same time, fix any connector crossings or edges cutting through node bodies.",
+      "expected_output": "The result should combine the old draw-io skill's stronger visual polish with the stricter connector-quality rules of drawio-skill, and lint should report no connector errors plus no polish warnings if those rules were applied.",
+      "files": []
+    }
+  ]
+}
