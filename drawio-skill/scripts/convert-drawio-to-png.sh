@@ -165,6 +165,8 @@ for drawio_file in "${inputs[@]}"; do
     else
       rm -f "$png_file"
       echo "  连默认也失败: $drawio_file"
+      echo "    -> 这个文件可能有问题，或 draw.io 本身有 bug"
+      echo "    -> 建议: 手动 GUI 导出，或更新 draw.io 到最新版"
       failed_files+=("$drawio_file")
     fi
   fi
@@ -181,4 +183,30 @@ fi
 
 if [ "${#failed_files[@]}" -gt 0 ]; then
   echo "失败文件数: ${#failed_files[@]}" >&2
+fi
+
+if [ "${#generated_files[@]}" -gt 0 ] && command -v git >/dev/null 2>&1 && git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  repo_root="$(git rev-parse --show-toplevel)"
+  stageable_files=()
+
+  for generated_file in "${generated_files[@]}"; do
+    generated_abs="$(cd "$(dirname "$generated_file")" && pwd)/$(basename "$generated_file")"
+    case "$generated_abs" in
+      "$repo_root" | "$repo_root"/*)
+        stageable_files+=("$generated_file")
+        ;;
+      *)
+        echo "Skip staging outside repository: $generated_file"
+        ;;
+    esac
+  done
+
+  if [ "${#stageable_files[@]}" -gt 0 ]; then
+    git add -- "${stageable_files[@]}"
+    echo "Staged ${#stageable_files[@]} generated PNG file(s)"
+  fi
+fi
+
+if [ "${#generated_files[@]}" -eq 0 ]; then
+  exit 1
 fi

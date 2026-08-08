@@ -14,9 +14,9 @@
 
 | 模块 | 状态 | 内容 |
 |------|------|------|
-| 01_readme_reading | 🔄 进行中 | 已学：标准结构、常见句型、长难句拆解（3步法）；待学：badges |
+| 01_readme_reading | ✅ 已完成 | 标准结构、常见句型、长难句拆解（3步法）、badges/shields.io |
 | 02_tech_vocabulary | 🔄 进行中 | 已学：Git一词多义(8个)、常见缩写(10个)、词根词缀(8前缀+4后缀)；待学：更多词根 |
-| 03_tech_writing | 🔄 进行中 | 已学：Conventional Commits；待学：PR description、issue 模板 |
+| 03_tech_writing | 🔄 进行中 | 已学：Conventional Commits、PR description 四段式(What/Why/How/Testing)、issue 模板(Description/Expected/Actual/Environment)；待学：README 撰写技巧 |
 | 04_reading_practice | ⏳ 待开始 | PyTorch/NumPy/Pandas 文档精读 |
 
 ---
@@ -31,8 +31,15 @@
 | README 常见句型（aims to/feel free/appreciate） | 2026-07-06 | - | - | ✅ 2026-07-09 | - |
 | 技术词汇（34个） | 2026-07-06 | - | - | ✅ 2026-07-09 | - |
 | Conventional Commits 规范 | 2026-07-06 | - | - | ✅ 2026-07-09 | - |
-| 长难句拆解（3步法） | 2026-07-09 | - | - | - | - |
-| 词根词缀（8前缀+4后缀） | 2026-07-09 | - | - | - | - |
+| 长难句拆解（3步法） | 2026-07-09 | - | ✅ 2026-07-10 | - | - |
+| 词根词缀（8前缀+4后缀） | 2026-07-09 | - | ✅ 2026-07-10 | - | - |
+| README badges/shields.io | 2026-07-10 | - | - | - | - |
+| FastAPI README 精读实战 | 2026-07-10 | - | - | - | - |
+| PyTorch README 精读（Autograd） | 2026-07-11 | - | - | - | ✅ 2026-08-07 |
+| 新词汇（9个：unique/static/scratch等） | 2026-07-11 | - | - | - | ✅ 2026-08-07 |
+| PR description 四段式 | 2026-08-07 | - | ✅ 2026-08-08 | - | - |
+| issue 模板（Description/Expected/Actual） | 2026-08-08 | - | - | - | - |
+| 新词汇（reproduce/expected/actual/freeze） | 2026-08-08 | - | - | - | - |
 
 ---
 
@@ -81,6 +88,33 @@
 | subset | 子集 | 2026-07-09 | "a subset of the data" |
 | substring | 子串 | 2026-07-09 | "extract a substring" |
 | transaction | 事务 | 2026-07-09 | "database transaction" |
+| on par with | 与...持平/不相上下 | 2026-07-10 | "Performance is on par with Go." |
+| intuitive | 直觉的、直观的 | 2026-07-10 | "The API is very intuitive." |
+| robust | 健壮的、稳定的 | 2026-07-10 | "A robust production system." |
+| duplication | 重复、冗余 | 2026-07-10 | "Minimize code duplication." |
+| interactive | 交互式的 | 2026-07-10 | "Interactive documentation." |
+| unique | 独特的（≠唯一） | 2026-07-11 | "PyTorch has a unique way of building neural networks." |
+| tape recorder | 磁带录音机（autograd比喻） | 2026-07-11 | "using and replaying a tape recorder" |
+| static | 静态的（与dynamic相对） | 2026-07-11 | "Most frameworks have a static view of the world." |
+| start from scratch | 从零开始 | 2026-07-11 | "Changing the network means starting from scratch." |
+| reverse-mode auto-diff | 反向模式自动微分 | 2026-07-11 | "a technique called reverse-mode auto-differentiation" |
+| lag | 延迟 | 2026-07-11 | "with zero lag or overhead" |
+| overhead | 额外开销 | 2026-07-11 | "minimal framework overhead" |
+| arbitrarily | 任意地 | 2026-07-11 | "change the way your network behaves arbitrarily" |
+| button | 按钮（≠bottom 底部） | 2026-08-07 | "Fix the focus button not showing" |
+| missing | 缺失的、消失的 | 2026-08-07 | "the focus button was missing" |
+| crash | 崩溃 | 2026-08-07 | "the game crashing when loading a save" |
+| save | 存档 | 2026-08-07 | "loading a save" |
+| address | 解决（正式） | 2026-08-07 | "This PR addresses the perf regression" |
+| implement | 实现 | 2026-08-07 | "Implement lazy loading" |
+| expose | 暴露、开放 | 2026-08-07 | "Expose cache.clear()" |
+| bump | 升级版本 | 2026-08-07 | "Bump deps to v2.1" |
+| refactor | 重构 | 2026-08-07 | "Refactor the data loader" |
+| tag | 国家代码（HOI4语境）/标签 | 2026-08-07 | "missing for some country tags" |
+| reproduce | 复现（让bug重现） | 2026-08-08 | "Steps to reproduce" |
+| expected | 预期的（应该发生的） | 2026-08-08 | "Expected behavior" |
+| actual | 实际的（真实发生的） | 2026-08-08 | "Actual behavior" |
+| freeze | 卡死（vs crash 崩溃） | 2026-08-08 | "The game freezes when loading a save." |
 
 ---
 
@@ -98,6 +132,21 @@
 - shipping 是"交付/部署"，不是"分发"（distribute）
 - sub- 前缀意思是"子级的/从属于"，不是"在下面"
 - based on 修饰前面整个动作，不是最近的名词
+- on par with 是"与...持平"，不是"远远超过"；**拼写是 par（标准杆），不是 pair（一对）**
+- unreachable 是"无法到达的"，不是"未能实现的"（那是unrealized）
+- shields.io 的 blue 是背景色，不是字体颜色
+- button 是"按钮"，bottom 是"底部"（衬衫纽扣 = button）
+- Fix 后面接名词短语（not showing / missing），不能接完整句子（didn't show）
+- "对某些国家" 用 for certain nations / country tags，不是 to play some nation
+- crashing 本身已含"出问题"，不必再加 bug（crashing bug 冗余）
+- crash 是动词，不配 was（was crash ❌ → crashes ✅）
+- 新游戏用 start，存档用 load（load a new game ❌ → start a new game ✅）
+- expected vs actual 是对照关系（应当 vs 实际），不是时间先后
+- is + 形容词 = 主系表结构（SVC），不是主谓宾（The button is missing）
+- 一个主语只配一个动词：works fine ✅，is work fine ❌
+- 修饰词前置：the "Load a save" button ✅，the button of 'Load a save' ❌
+- when + 动词：when clicking（分词）或 when I click，不写 when click
+- the game is frozen / the game freezes ✅，the game frozen ❌（frozen 不能独立当谓语）
 
 ### 实用表达
 - "Feel free to open an issue" — 尽管提 issue
@@ -107,9 +156,18 @@
 - "based on standard Python type hints" — 基于标准 Python 类型注解
 
 ### 学习心得
-- 已掌握 README 10个标准结构 + 5个常见句型
-- 已掌握 34+8 个技术词汇（Git术语 + 缩写 + 词根词缀派生词）
+- 已掌握 README 10个标准结构 + 5个常见句型 + badges/shields.io
+- 已掌握 48+ 个技术词汇（Git术语 + 缩写 + 词根词缀派生词 + FastAPI/PyTorch精读词）
 - 已掌握 Conventional Commits 基本格式
 - 已掌握长难句拆解三步法：找主谓宾 → 看定语从句 → 看冒号/破折号后解释
 - 已掌握 8 个常用前缀（de/re/un/over/inter/sub/trans/auto）+ 4 个后缀（-ify/-able/-tion/-ment）
-- 待学：PR description、issue 模板、更多词根词缀、badges
+- 已完成首次真实 README 精读实战（FastAPI）
+- 待学：PR description、issue 模板、更多词根词缀
+- **易混淆**：on par with（持平）≠ far exceeds（远超）
+- **易混淆**：unique（独特的）≠ 唯一的（only/sole）
+- **易混淆**：static（静态的）≠ 统计学的（statistical）
+- **易混淆**：start from scratch（从零开始）≠ 从描述的尺度
+- **易混淆**：Caffe（深度学习框架）≠ 咖啡（coffee）
+- 已完成首次 PyTorch 官方 README 精读实战（Autograd 部分）
+- 已掌握 issue 模板（Description/Expected/Actual/Environment）+ 与 PR 四段式对比
+- 易混淆：freeze（卡死）≠ crash（崩溃）——freeze 是画面不动，crash 是程序退出

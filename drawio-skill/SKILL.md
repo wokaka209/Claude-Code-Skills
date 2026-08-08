@@ -18,7 +18,7 @@ compatibility:
 
 这个 skill 用于高质量地创建、修改、审查和导出 draw.io / diagrams.net 的 `.drawio` 文件。
 
-目标不是"能生成图"，而是生成：
+目标不是“能生成图”，而是生成：
 
 - 准确的图
 - 可维护的图
@@ -52,7 +52,7 @@ compatibility:
 
 环境规则见 [platform-environments.md](references/platform-environments.md)。
 
-如果用户说的是"帮我画一个图"，默认你要同时考虑：
+如果用户说的是“帮我画一个图”，默认你要同时考虑：
 
 - 图种是否选对
 - 连线是否会交叉
@@ -93,7 +93,7 @@ python scripts/drawio_tools.py normalize path/to/file.drawio --in-place
 - 尽量保留已有 `mxCell id`
 - 只改必要元素、样式、坐标和连接线
 
-不要为了"整理结构"而整体重写整个页面。
+不要为了“整理结构”而整体重写整个页面。
 
 ### 3. 新建图时，优先输出可编辑的内联 XML
 
@@ -176,7 +176,7 @@ DRAWIO_PLATFORM=windows DRAWIO_BIN="/c/Program Files/draw.io/draw.io.exe" bash s
 
 ### 7. 新建图时必须有意识选择视觉系统
 
-不要默认每次都画成"浅色圆角矩形 + 细灰线 + 蓝色标题"的同一张 AI 图。
+不要默认每次都画成“浅色圆角矩形 + 细灰线 + 蓝色标题”的同一张 AI 图。
 
 除非用户已有设计语言，否则你应当先在脑中选择一种视觉系统，再开始画：
 
@@ -284,7 +284,7 @@ python scripts/drawio_tools.py lint path/to/file.drawio
 - 标签不要悬空，箭头不要盖住标题
 - 多页图保持同一套命名、字体和颜色体系
 
-如果图已经正确但仍然"丑"，优先检查这三件事：
+如果图已经正确但仍然“丑”，优先检查这三件事：
 
 1. 是否缺乏留白
 2. 是否没有明显视觉层级
@@ -313,7 +313,7 @@ python scripts/drawio_tools.py lint path/to/file.drawio
 - 优先用 `mxgraph.aws4.*`
 - 服务名尽量写正式名称
 - 分组边界优先用 AWS Cloud、VPC、Security Group 等 group 图标
-- 用户只说"画 AWS 架构图"时，也要先确认是逻辑图、部署图还是数据流图
+- 用户只说“画 AWS 架构图”时，也要先确认是逻辑图、部署图还是数据流图
 
 可以用：
 

@@ -154,3 +154,9 @@
 | blame | 查看谁修改的 | 责备 |
 | cherry-pick | 摘取提交 | 挑选 |
 | hook | 钩子（触发器） | 钩子 |
+| unique | 独特的（≠唯一） | 独特的 |
+| static | 静态的（与dynamic相对） | 静态 |
+| scratch | 划痕/起跑线 | 从零开始 |
+| lag | 延迟 | 零延迟 |
+| overhead | 额外开销 | 最小开销 |
+| arbitrarily | 任意地 | 任意改变 |

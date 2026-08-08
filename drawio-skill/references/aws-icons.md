@@ -69,6 +69,7 @@ shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;
 | Amazon API Gateway | mxgraph.aws4.api_gateway | resourceIcon |
 | Amazon Route 53 | mxgraph.aws4.route_53 | resourceIcon |
 | Amazon CloudFront | mxgraph.aws4.cloudfront | resourceIcon |
+| Amazon VPC | mxgraph.aws4.vpc | resourceIcon |
 | Internet Gateway | mxgraph.aws4.internet_gateway | resourceIcon |
 | NAT Gateway | mxgraph.aws4.nat_gateway | resourceIcon |
 | VPC Endpoint | mxgraph.aws4.endpoints | resourceIcon |

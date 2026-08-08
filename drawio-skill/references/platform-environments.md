@@ -79,6 +79,12 @@ C:\Program Files\diagrams.net\draw.io.exe
 - Windows 下优先建议用户在 Git Bash 里运行脚本
 - 如果装在非标准路径，显式设置 `DRAWIO_BIN`
 
+例如：
+
+```bash
+DRAWIO_PLATFORM=windows DRAWIO_BIN="/c/Program Files/draw.io/draw.io.exe" bash scripts/convert-drawio-to-png.sh file.drawio
+```
+
 ## 4. Linux
 
 Linux 更常见的是 PATH 安装或包管理器安装。
@@ -107,9 +113,23 @@ WSL 在技术上属于 Linux，但很多用户实际想调用 Windows 的 draw.i
 如果是 WSL：
 
 - 最稳妥的方式是用户手动设置 `DRAWIO_BIN`
-- skill 里要明确告诉用户这是"特殊环境"
+- skill 里要明确告诉用户这是“特殊环境”
 
-## 6. 推荐环境变量
+## 6. skill 中的执行要求
+
+当任务涉及导出 PNG 或调用 draw.io 可执行文件时：
+
+- 先识别平台
+- 输出使用的平台判断
+- 如果路径不标准，提醒用户设置 `DRAWIO_BIN`
+
+不要做这些事：
+
+- 在 Linux / Windows 上硬编码 macOS App bundle 路径
+- 在 Windows 环境下假设 `/Applications/...` 存在
+- 在 Bash 脚本里直接使用 PowerShell 路径写法
+
+## 7. 推荐环境变量
 
 导出脚本支持这些变量：
 
@@ -118,3 +138,17 @@ WSL 在技术上属于 Linux，但很多用户实际想调用 Windows 的 draw.i
 - `DRAWIO_EXPORT_SCALE`
 - `DRAWIO_EXPORT_BORDER`
 - `DRAWIO_EXPORT_SLEEP_SECONDS`
+
+示例：
+
+```bash
+DRAWIO_PLATFORM=linux DRAWIO_BIN=/usr/bin/drawio bash scripts/convert-drawio-to-png.sh architecture.drawio
+```
+
+```bash
+DRAWIO_PLATFORM=windows DRAWIO_BIN="/c/Program Files/draw.io/draw.io.exe" bash scripts/convert-drawio-to-png.sh
+```
+
+```bash
+DRAWIO_PLATFORM=macos bash scripts/convert-drawio-to-png.sh
+```

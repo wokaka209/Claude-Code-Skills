@@ -91,7 +91,7 @@ void ButtonTask(void *param) {
 ## 课程体系
 
 | 模块 | 内容 | 难度 | 预计课时 |
-|------|------|------|----------|
+|------|------|------|---------|
 | 01_concepts | RTOS 基本概念、裸机 vs RTOS、FreeRTOS 简介 | 入门 | 1 课 |
 | 02_task_basics | 任务创建、删除、优先级、任务状态 | 入门 | 2 课 |
 | 03_scheduling | 调度器、抢占式/协作式、时间片、临界区 | 基础 | 2 课 |
@@ -404,7 +404,7 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName);
 ### 常见陷阱
 
 | 陷阱 | 说明 | 解决方案 |
-|------|------|----------|
+|------|------|---------|
 | SysTick 冲突 | FreeRTOS 用 SysTick 做 tick 源，HAL_Delay 也依赖它 | CubeMX 中 Timebase Source 改为 TIM6 |
 | 中断优先级 | STM32 优先级数值越小越高，与 FreeRTOS 相反 | configMAX_SYSCALL_INTERRUPT_PRIORITY 设好 |
 | 栈溢出 | 任务栈太小导致 HardFault | 开启 configCHECK_FOR_STACK_OVERFLOW=2 |
@@ -438,7 +438,7 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName);
 ### 复习时间点
 
 | 轮次 | 间隔 | 检验方式 |
-|-----|------|----------|
+|-----|------|---------|
 | 1 | 1小时后 | 不查资料，口述概念和核心 API |
 | 2 | 1天后 | 默写 API 签名 + 解释参数含义 |
 | 3 | 3天后 | 解决变体场景（如：中断中如何安全通信） |

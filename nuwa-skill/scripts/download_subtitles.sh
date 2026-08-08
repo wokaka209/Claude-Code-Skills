@@ -1,6 +1,7 @@
 #!/bin/bash
 # 从YouTube视频下载字幕
 # 用法: ./download_subtitles.sh <YouTube_URL> [输出目录]
+# 优先下载人工字幕，无人工字幕则下载自动生成字幕
 # 语言优先级：中文 > 英文 > 其他
 
 set -e
